@@ -1,18 +1,7 @@
 ﻿# THIẾT KẾ KIẾN TRÚC CHATBOT TƯ VẤN SỨC KHỎE & ĐẶT LỊCH KHÁM (MEDIBOT)
 
 
-## Bước 1: Bảng thiết kế giao tiếp (6 Endpoint Routing)
 
-| Method | Endpoint | Mục đích | Ví dụ thực tế |
-| :--- | :--- | :--- | :--- |
-| **GET** | `/api/v1/list` | Lấy danh sách bác sĩ / chuyên khoa | Xem khoa Nội, khoa Răng |
-| **GET** | `/api/v1/detail` | Xem chi tiết thông tin 1 bác sĩ hoặc lịch hẹn | Xem bằng cấp bác sĩ A |
-| **POST** | `/api/v1/create` | Đặt lịch khám mới | Đặt khám 9h sáng mai |
-| **PUT** | `/api/v1/update` | Đổi giờ khám hoặc cập nhật triệu chứng | Dời lịch sang chiều thứ 5 |
-| **DELETE** | `/api/v1/delete` | Hủy lịch khám đã đặt | Hủy lịch hẹn mã #12 |
-| **GET** | `/api/v1/stats` | Thống kê số lượt khám / khung giờ trống | Xem giờ nào đang vắng khách |
-
----
 
 ## Bước 2: System Prompt
 
